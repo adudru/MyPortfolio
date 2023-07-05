@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title></title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section {
+        margin: 10px;
+      }
+    </style>
+    <script>
+      function swapStrings() {
+        var fromSection = document.getElementById("fromSection");
+        var fromText = fromSection.innerText;
+
+        var toSection = document.getElementById("toSection");
+        var toText = toSection.innerText;
+
+        fromSection.innerText = toText;
+        toSection.innerText = fromText;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>String Swapping Example</h1>
+
+    <div class="container">
+      <section id="fromSection">Pampanga</section>
+
+      <section id="toSection">Pangasinan</section>
+    </div>
+
+    <div class="container">
+      <img
+        src="swap-icon.png"
+        alt="Swap Icon"
+        onclick="swapStrings()"
+        style="cursor: pointer"
+      />
+    </div>
+  </body>
+</html>
